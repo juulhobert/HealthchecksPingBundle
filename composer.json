@@ -1,0 +1,38 @@
+{
+    "name": "juulhobert/healthchecks-ping-bundle",
+    "description": "Provides a Healthchecks integration for your Symfony project.",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Juul Hobert",
+            "email": "juul.hobert@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^5.6|^7.0",
+        "symfony/framework-bundle": "^2.7|^3.0|^4.0"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^4.0",
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "JH\\HealthchecksPingBundle\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JH\\HealthchecksPingBundle\\Tests\\": "Tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
